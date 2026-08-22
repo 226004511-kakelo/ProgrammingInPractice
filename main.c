@@ -5,14 +5,14 @@ int main() {
      char mayorName[30];
      int population;
      printf("Enter Municipality Name:");
-     scanf("%s \n", &municipalityName);
+     scanf("%s", &municipalityName);
      printf("Enter Mayor Name:");
-     scanf("%s \n", &mayorName);
+     scanf("%s", &mayorName);
      printf("Enter Population:");
-     scanf("%d \n", &population);
+     scanf(" %d", &population);
     
-     printf("Municipality: %s\n", municipalityName);
-     printf("Mayor: %s\n", mayorName);
+     printf("Municipality Name: %s\n", municipalityName);
+     printf("Mayor Name: %s\n", mayorName);
      printf("Population: %d\n", population);
 
 
