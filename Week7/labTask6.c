@@ -8,18 +8,17 @@ int main() {
     int done= 0;
     while (done == 0){
     printf("\nMUNICIPAL FINANCIAL MANAGEMENT\n");
-    printf("\n  Select a task: 1. Add Supplier\n"
+    printf("\n  Select a task:          1. Add Supplier\n"
            "                            2. Display Supplier\n"
            "                            3. Search Supplier\n"
            "                            4. Show Name Length\n"
-           "                            5. Exit");
+           "                            5. Exit    ");
     scanf("%d", &choice);
     switch (choice)
     {
     case 1:
         printf("Enter supplier name: ");
     fgets(supplierName, sizeof(supplierName), stdin);
-
     
     printf("Enter supplier email: ");
     fgets(email, sizeof(email), stdin);
