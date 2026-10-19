@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char supplierName[50], email[50], phone[30], town[50], search[50];
+    char supplierName[50], email[50], phone[30], town[50], search[50], copy[50];
     int supplierNameLength, emailLength, townLength;
     int choice;
     int done= 0;
@@ -14,6 +14,9 @@ int main() {
            "                            4. Show Name Length\n"
            "                            5. Exit    ");
     scanf("%d", &choice);
+   
+    getchar();
+       
     switch (choice)
     {
     case 1:
@@ -38,6 +41,8 @@ int main() {
     printf("Email: %s", email);
     printf("Phone: %s", phone);
     printf("Town: %s", town);
+    strcpy(copy, supplierName);
+    printf("Back up copy: %s", copy);
         break;
         case 3:
 
@@ -72,6 +77,7 @@ int main() {
         break;
     }
 }
+
 
     
 
