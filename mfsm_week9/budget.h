@@ -1,20 +1,19 @@
 #ifndef BUDGET_H
 #define BUDGET_H
 
-
-     int employeeCouner = 0;
-   int employeeID[10];
-    char employeeName[3][50];
-  char employeePhone[3][10];
- double employeeSalary[3][8];
-        void employeeMenu();
-          void addEmployees();
+      float revenue, expenses, result;
+     int budgetCounter = 0;
+   int budgetID[3];
+    char budgetName[3][50];
+ float budgetValue[3];
+        void budgetMenu();
+          void addBudget();
            
-           void listEmployees();
+           void listBudgets();
         
-           void searchEmployees();
-
-
+     
+          int budgetManagement();
+         float calculateBudget(float revenue, float expenses);
 
 
 

@@ -3,13 +3,13 @@
 
 
      int employeeCouner = 0;
-   int employeeID[10];
+   int employeeID[3];
     char employeeName[3][50];
-  char employeePhone[3][10];
- double employeeSalary[3][8];
+  int employeePhone[3];
+ float employeeSalary[3];
         void employeeMenu();
           void addEmployees();
-           
+            int employeeManagement();
            void listEmployees();
         
            void searchEmployees();

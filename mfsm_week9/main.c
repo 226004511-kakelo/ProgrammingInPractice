@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include "employee.h"
-
+#include "budget.h"
+#include "reports.h"
+#include "utilities.h"
 
 
 void displayMenu(){
          printf("\nMUNICIPAL MANAGEMENT SYSTEM\n");
     printf("\n  Select a task:          1. Budget Management \n"
-           "                            2. Supplier Management\n"
-           "                            3. Employee Management\n"
-           "                            4. Display Reports \n"
-           "                            5. Exit    ");
+           "                            2. Employee Management\n"
+           "                            3. Display Reports \n"
+           "                            4. Exit    ");
 }
 
 
@@ -31,20 +32,17 @@ int main() {
         budgetManagement();
         break;
 
-    case 2:
-        supplierManagement();
-        break;
-        case 3:
+        case 2:
      
-       employeeManagment();
+       employeeManagement();
+    break;
+
+    case 3:
+        reports();
+
     break;
 
     case 4:
-    
-
-    break;
-
-    case 5:
 
     
          done =1;
@@ -56,6 +54,6 @@ int main() {
     }
 }
 
-    
+    return 0;
 
 }

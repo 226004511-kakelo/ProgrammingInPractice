@@ -14,19 +14,19 @@ void employeeMenu(){
    
    
       if (employeeCouner < 3){
-         printf("\nEnter asset name:  ");
+         printf("\nEnter Employee name:  ");
          scanf("%s" , employeeName[employeeCouner]);
 
-         printf("\nEnter asset PurchaseValue:  ");
-         scanf("%lf", &employeePhone[employeeCouner]);
+         printf("\nEnter Employee Phone:  ");
+         scanf("%d", &employeePhone[employeeCouner]);
 
-         printf("\nEnter asset Department:  ");
-         scanf("%s", employeeSalary[employeeCouner]);
+         printf("\nEnter Employee Salary:  ");
+         scanf("%f", employeeSalary[employeeCouner]);
 
        employeeCouner = employeeCouner+1;
        employeeID[employeeCouner-1] = employeeCouner-1;
 
-       printf("\nAssets entered: %d/3\n", employeeCouner);
+       printf("\nEmployees entered: %d/3\n", employeeCouner);
 
 
       }else{
@@ -41,11 +41,12 @@ void employeeMenu(){
       printf("\n--Employee List--\n");
     for (int i = 0; i< employeeCouner; i++){
       printf("\nEmployee ID: %d\n", employeeID[i]);
-      printf("nEmployee Name: %s\n", employeeName[i]);
-       printf("Salary: %s\n", employeeSalary[i]);
-       printf("Phone: %f\n", employeePhone[i]);
+      printf("Employee Name: %s\n", employeeName[i]);
+       printf("Salary: %f\n", employeeSalary[i]);
+       printf("Phone: %d\n", employeePhone[i]);
+      
         }
-   return 0;
+        printf("\n--------------------\n");
    }
 
 
@@ -66,7 +67,7 @@ void searchEmployees(){
          printf("Employee found\n");
       } else
        { printf("Employee not found\n");}
-      return 0;
+     
    }
 
 
@@ -106,5 +107,5 @@ void searchEmployees(){
             break;
         }
     }
-
+    return 0;
         }
